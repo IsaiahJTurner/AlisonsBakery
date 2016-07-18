@@ -1,7 +1,7 @@
 # Alison's Bakery
 An open source bakery site you'll loaf to death.
 
-[![Build Status](https://travis-ci.org/IsaiahJTurner/AlisonsBakery.svg?branch=master)](https://travis-ci.org/IsaiahJTurner/AlisonsBakery) [![Dependency Status](https://david-dm.org/IsaiahJTurner/AlisonsBakery.svg)](https://david-dm.org/IsaiahJTurner/AlisonsBakery) [![Code Climate](https://codeclimate.com/github/IsaiahJTurner/AlisonsBakery/badges/gpa.svg)](https://codeclimate.com/github/IsaiahJTurner/AlisonsBakery)
+[![Build Status](https://travis-ci.org/IsaiahJTurner/AlisonsBakery.svg?branch=master)](https://travis-ci.org/IsaiahJTurner/AlisonsBakery) [![Dependency Status](https://david-dm.org/IsaiahJTurner/AlisonsBakery.svg)](https://david-dm.org/IsaiahJTurner/AlisonsBakery) [![Code Climate](https://codeclimate.com/github/IsaiahJTurner/AlisonsBakery/badges/gpa.svg)](https://codeclimate.com/github/IsaiahJTurner/AlisonsBakery) [![GitHub version](https://badge.fury.io/gh/IsaiahJTurner%2FAlisonsBakery.svg)](https://badge.fury.io/gh/IsaiahJTurner%2FAlisonsBakery)
 
 ## Backend vs Frontend
 The guidelines for this project included mocking a "3rd party backend." I did not want to have two repositories for this so I placed the frontend on gh-pages and the backend on master.
