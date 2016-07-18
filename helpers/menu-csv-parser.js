@@ -1,4 +1,4 @@
-var Q = require("Q");
+var Q = require("q");
 var async = require("async");
 var parse = require("csv-parse");
 var MenuItem = require("../models/MenuItem");
