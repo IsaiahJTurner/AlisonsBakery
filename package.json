@@ -1,0 +1,29 @@
+{
+  "name": "alisons-bakery-backend",
+  "version": "1.0.0",
+  "description": "An open source bakery site you'll loaf to death.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --recursive",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsaiahJTurner/AlisonsBakery.git"
+  },
+  "author": "Isaiah Turner",
+  "bugs": {
+    "url": "https://github.com/IsaiahJTurner/AlisonsBakery/issues"
+  },
+  "homepage": "https://github.com/IsaiahJTurner/AlisonsBakery#readme",
+  "dependencies": {
+    "async": "^2.0.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "chai-things": "^0.2.0",
+    "csv-parse": "^1.1.3",
+    "express": "^4.14.0",
+    "q": "^1.4.1",
+    "underscore": "^1.8.3"
+  }
+}
