@@ -10,5 +10,5 @@
   ],
   "website": "https://isaiahjturner.github.io/AlisonsBakery",
   "success_url": "/",
-  "image": "heroku/nodejs",
+  "image": "heroku/nodejs"
 }
