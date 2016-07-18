@@ -1,0 +1,14 @@
+{
+  "name": "Alison's Bakery",
+  "description": "An open source bakery site you'll loaf to death.",
+  "repository": "https://github.com/IsaiahJTurner/AlisonsBakery",
+  "keywords": ["node", "express", "static", "alisons", "bakery", "alisonsbakery", "alisons bakery", "isaiah", "turner", "isaiah turner", "isaiahjturner"],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs#v83"
+    }
+  ],
+  "website": "https://isaiahjturner.github.io/AlisonsBakery",
+  "success_url": "/",
+  "image": "heroku/nodejs",
+}

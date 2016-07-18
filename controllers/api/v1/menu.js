@@ -6,7 +6,7 @@ exports.get = function(req, res) {
     var category = req.query.category;
     var menu_items;
     async.waterfall([
-        function(callback) {
+        function(callback) { // retrieve and fitler (if needed) menus
             if (category) {
                 Menu.findByCategory(category).then(function(menu) {
                     callback(null, [menu]);
@@ -17,7 +17,7 @@ exports.get = function(req, res) {
                 // all menu's returned
             }
         },
-        function(menus) {
+        function(menus) { // filter menu items (if needed)
             if (query) {
 
             }

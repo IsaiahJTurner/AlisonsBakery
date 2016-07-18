@@ -10,13 +10,29 @@ The guidelines for this project included mocking a "3rd party backend." I did no
 Since the content is static, a database was not used. Records can be added in the CSV file and edited in Excel or Numbers.
 
 ## Demo
-To see a demo of the site visit [isaiahjturner.github.io/AlisonsBakery](https://isaiahjturner.github.io/AlisonsBakery]). If a connection can not be established to the backend (you're looking at this repo months after I built it), you'll be prompted to set up your own. Click the button below to deploy to GitHub pages. Visit your heroku deployment to see the demo.
+[isaiahjturner.github.io/AlisonsBakery](https://isaiahjturner.github.io/AlisonsBakery)
+
+To see a demo of the site visit the link above. If a connection can not be established to the backend (you're looking at this repo months after I built it), you'll be prompted to set up your own. Click the button below to deploy to GitHub pages. Visit your heroku deployment to see the demo.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 
 ## Development
+### Running
 1. `git clone AlisonsBakery`
 2. `cd AlisonsBakery`
 3. `npm install`
 4. `npm start` or, even better, `nodemon` if you have it.
+
+### Contributing
+
+#### Instructions
+1. `npm test`
+2. Submit a pull request
+3. Resolve conflicts
+
+#### Guidelines
+- Write tests for any added functionality.
 
 ## Security Concerns
 - CORS is wide open
