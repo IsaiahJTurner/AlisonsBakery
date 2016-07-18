@@ -18,7 +18,7 @@ var controllers = {
         }
     }
 };
-app.get("/menu", controllers.index.get)
+app.get("/", controllers.index.get)
 
 api.get("/menu", controllers.api.v1.menu.get)
 
