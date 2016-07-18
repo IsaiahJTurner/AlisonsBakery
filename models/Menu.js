@@ -5,7 +5,6 @@ var Q = require("q");
 var async = require("async");
 var parse = require("csv-parse");
 var MenuItem = require("../models/MenuItem");
-var Menu = require("../models/Menu");
 
 var Menu = function(menu_items) {
     this.menu_items = menu_items;
