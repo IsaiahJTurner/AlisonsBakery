@@ -1,5 +1,5 @@
 var fs = require('fs');
-var Q = require("Q");
+var Q = require("q");
 
 // resolves a promise with the String contents of the file at the given path
 exports.read = function(path) {
