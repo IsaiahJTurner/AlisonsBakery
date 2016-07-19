@@ -4,7 +4,7 @@ var app = require(path.resolve(__dirname, "../../../../app.js")).app;
 
 describe('GET /api/v1/menu', function() {
     // TODO: increase test coverage
-    it('respond with json', function(done) {
+    it('should respond with json', function(done) {
         request(app)
             .get('/api/v1/menu')
             .set('Accept', 'application/json')
