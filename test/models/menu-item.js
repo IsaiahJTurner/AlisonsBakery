@@ -5,5 +5,5 @@ chai.use(require("chai-as-promised"));
 chai.should();
 
 describe('MenuItem', function() {
-    // no functionality implimented
+    // no functionality to test
 });

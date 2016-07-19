@@ -1,0 +1,12 @@
+.sidebar {
+  display: inline-flex;
+  flex: 1 1 auto;
+  padding: 50px;
+  .friend {
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../img/friend-1.png');
+  }
+}
