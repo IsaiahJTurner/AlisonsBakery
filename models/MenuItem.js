@@ -8,7 +8,7 @@ var MenuItem = function(object) {
     this.is_gluten_free = object.is_gluten_free;
 };
 
-MenuItem.prototype.toObject = function() {
+MenuItem.prototype.toObject = function(depth, opts) { // console.log modifications
     return {
         name: this.name,
         price: this.price,
@@ -19,8 +19,15 @@ MenuItem.prototype.toObject = function() {
     };
 };
 
-MenuItem.prototype.toString = function() {
-    return JSON.stringify(this.toObject());
+MenuItem.prototype.inspect = function(depth, opts) { // console.log modifications
+    return this.toObject();
 };
 
+MenuItem.prototype.toJSON = function(depth, opts) { // console.log modifications
+    return this.toObject();
+};
+
+MenuItem.prototype.toString = function(depth, opts) { // console.log modifications
+    return this.toJSON();
+};
 module.exports = MenuItem;

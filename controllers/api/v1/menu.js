@@ -8,38 +8,47 @@ exports.get = function(req, res) {
     async.waterfall([
         function(callback) { // retrieve and fitler (if needed) menus
             if (category) {
-                Menu.findByCategory(category).then(function(menu) {
-                    callback(null, [menu]);
+                return Menu.findByCategory(category).then(function(menu) {
+                    var menus = [menu]; // next waterfall function takes array
+                    callback(null, menus);
                 }, function(err) {
                     callback(err);
                 });
             } else {
-                // all menu's returned
+                Menu.findAll().then(function(menus) {
+                    callback(null, menus);
+                }, function(err) {
+                    callback(err);
+                });
             }
         },
-        function(menus) { // filter menu items (if needed)
-            if (query) {
+        function(menus, callback) { // filter menu items (if needed)
 
-            }
-            // combine the MenuItems from all the Menus into one big array
             var menu_items = [];
-            for (var i = 0; i < menus.length; i++) {
-                var menu = menus[i];
-                menu_items.join(menu.menu_items);
-            }
 
+            for (var category in menus) {
+                var menu = menus[category];
+                if (query) { // if we are querying, get MenuItems results from Menu.query
+                    var results = menu.query(query);
+                    menu_items = menu_items.concat(results); // combine results together
+                } else {
+                    menu_items = menu_items.concat(menu.menu_items);
+                }
+            }
             callback(null, menu_items);
         }
     ], function(err, menu_items) {
         if (err) {
             return res.json({
                 errors: [{
-                    title: err
+                    title: err.message
                 }]
             });
         }
-        return res.json({
-            menu_items: menu_items
-        })
+        res.json({
+            menu_items: menu_items.map(function(menu_item) {
+                return menu_item.toJSON();
+            })
+        });
     });
 };

@@ -9,7 +9,6 @@ var api = express.Router();
 
 app.use("/api/v1", api);
 
-
 var controllers = {
     index: require('./controllers/'),
     api: {
@@ -25,3 +24,5 @@ api.get("/menu", controllers.api.v1.menu.get)
 app.listen(app.get('port'), function() {
     console.log('Started on port ' + app.get("port") + '!');
 });
+
+exports.app = app;
