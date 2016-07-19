@@ -1,4 +1,7 @@
 {
   "js": {
+  },
+  "html": {
+    "indent_size": 2
   }
 }

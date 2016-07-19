@@ -4,7 +4,7 @@ An open source bakery site you'll loaf to death.
 [![Build Status](https://travis-ci.org/IsaiahJTurner/AlisonsBakery.svg?branch=master)](https://travis-ci.org/IsaiahJTurner/AlisonsBakery) [![Dependency Status](https://david-dm.org/IsaiahJTurner/AlisonsBakery.svg)](https://david-dm.org/IsaiahJTurner/AlisonsBakery) [![Code Climate](https://codeclimate.com/github/IsaiahJTurner/AlisonsBakery/badges/gpa.svg)](https://codeclimate.com/github/IsaiahJTurner/AlisonsBakery) [![GitHub version](https://badge.fury.io/gh/IsaiahJTurner%2FAlisonsBakery.svg)](https://badge.fury.io/gh/IsaiahJTurner%2FAlisonsBakery)
 
 ## Backend vs Frontend
-The guidelines for this project included mocking a "3rd party backend." I did not want to have two repositories for this so I placed the frontend on gh-pages and the backend on master.
+The guidelines for this project included mocking a "3rd party backend" but in an effort to keep the project within one repository (and to use GitHub Pages), the code had to be partially combined. Apart from the index.html file, all the frontend code is isolated to the frontend folder.
 
 ## Backend Notes
 Since the content is static, a database was not used. Records can be added in the CSV file and edited in Excel or Numbers.
@@ -33,6 +33,7 @@ To see a demo of the site visit the link above. If a connection can not be estab
 
 #### Guidelines
 - Write tests for any added functionality.
+- Browser support for Opera Mini and IE 8 is not required.
 
 ## Security Concerns
 - CORS is wide open

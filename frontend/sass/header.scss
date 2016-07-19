@@ -1,0 +1,31 @@
+header {
+  background: url('../img/header-background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 40px;
+  padding-bottom: 40px + 50px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  .logo {
+    width: 505px;
+    height: 89px;
+    @include background-image-retina(logo, png, 505px, 89px);
+    @media screen and (max-width: $mobile-breakpoint) {
+      width: 238px;
+      height: 189px;
+      @include background-image-retina(logo-mobile, png, 238px, 189px);
+    }
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: auto;
+  }
+  .slogan {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5px;
+  }
+}
