@@ -6,7 +6,7 @@ body {
   background: #52062D;
 }
 .container {
-  max-width: 1224px;
+  max-width: $laptop-breakpoint;
   margin: auto;
   display: flex;
   width: 100%;

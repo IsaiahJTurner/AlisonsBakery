@@ -69,7 +69,13 @@ header {
   padding-left: 60px;
   display: inline-flex;
   flex-direction: column;
-  font-size: 0; }
+  font-size: 0;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 1224px) {
+    .content {
+      padding-left: 0;
+      margin-left: auto;
+      margin-right: auto; } }
   .content .background {
     padding-top: 60px;
     width: 100%;
@@ -86,11 +92,19 @@ header {
     height: 100%;
     display: inline-flex;
     flex-flow: column; }
+    @media screen and (max-width: 600px) {
+      .content .left {
+        width: 100%;
+        display: block; } }
   .content .right {
     padding-left: 25px;
     padding-right: 50px;
     width: calc(100% - 347px);
     display: inline-flex; }
+    @media screen and (max-width: 600px) {
+      .content .right {
+        width: 100%;
+        display: block; } }
   .content .heading {
     font-size: 24px;
     margin-bottom: 10px;
@@ -105,21 +119,88 @@ header {
       padding-left: 2px;
       display: block;
       width: 100%;
-      margin-bottom: 5px; }
+      margin-bottom: 6px; }
     .content .filter .option .checkbox {
       position: relative;
       top: -1px; }
   .content .results {
+    margin-top: 5px;
     overflow: scroll;
     flex: 1 1 auto;
+    position: relative; }
+    .content .results:before {
+      content: "";
+      width: 100%;
+      position: absolute;
+      box-shadow: 0px -1px 1px 1px rgba(0, 0, 0, 0.3); }
+    .content .results .result {
+      cursor: pointer;
+      margin: 10px 0; }
+      .content .results .result.active {
+        background: #F377BB !important; }
+        .content .results .result.active:hover {
+          opacity: 0.9; }
+        .content .results .result.active .info, .content .results .result.active .title {
+          color: white; }
+      .content .results .result:hover {
+        background: #FFF6FA; }
+      .content .results .result .thumbnail {
+        width: 80px;
+        height: 50px;
+        display: inline-block; }
+      .content .results .result .fill-right {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - $thumbnail-width); }
+      .content .results .result .title {
+        margin-top: 5px;
+        font-size: 18px;
+        font-weight: bold; }
+      .content .results .result .info {
+        color: #979797;
+        font-size: 16px; }
+        .content .results .result .info li {
+          display: inline-block; }
+          .content .results .result .info li:not(:last-of-type):after {
+            content: "-"; }
+  .content .menu-item .image {
+    width: 100%;
+    margin-bottom: 10px; }
+  .content .menu-item .title {
+    font-weight: bold;
+    font-size: 19px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - $cost-width);
+    height: 22px; }
+  .content .menu-item .cost {
+    display: inline-block;
+    font-size: 19px;
+    text-align: right;
+    vertical-align: top;
+    width: 80px; }
+  .content .menu-item .description {
+    margin-top: 10px;
     font-size: 16px; }
-  .content .menu-item {
-    font-size: 16px; }
+  .content .menu-item .badges.badge {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background-repeat: no-repeat; }
+    .content .menu-item .badges.badge.vegan {
+      background: url("../img/vegan.svg");
+      height: 64px; }
+    .content .menu-item .badges.badge.gluten-free {
+      background: url("../img/gluten-free.svg"); }
 
 .sidebar {
   display: inline-flex;
   flex: 1 1 auto;
   padding: 50px; }
+  @media screen and (max-width: 1224px) {
+    .sidebar {
+      display: none; } }
   .sidebar .friend {
     width: 100%;
     background-position: center;
@@ -132,4 +213,5 @@ footer {
   color: white;
   display: block;
   padding-top: 10px;
-  font-size: 18px; }
+  font-size: 18px;
+  opacity: 0.9; }
