@@ -1,7 +1,7 @@
-# Alison's Bakery
+# Allison's Bakery
 An open source bakery site you'll loaf to death.
 
-[![Build Status](https://travis-ci.org/IsaiahJTurner/AlisonsBakery.svg?branch=master)](https://travis-ci.org/IsaiahJTurner/AlisonsBakery) [![Dependency Status](https://david-dm.org/IsaiahJTurner/AlisonsBakery.svg)](https://david-dm.org/IsaiahJTurner/AlisonsBakery) [![Code Climate](https://codeclimate.com/github/IsaiahJTurner/AlisonsBakery/badges/gpa.svg)](https://codeclimate.com/github/IsaiahJTurner/AlisonsBakery) [![GitHub version](https://badge.fury.io/gh/IsaiahJTurner%2FAlisonsBakery.svg)](https://badge.fury.io/gh/IsaiahJTurner%2FAlisonsBakery)
+[![Build Status](https://travis-ci.org/IsaiahJTurner/AllisonsBakery.svg?branch=master)](https://travis-ci.org/IsaiahJTurner/AllisonsBakery) [![Dependency Status](https://david-dm.org/IsaiahJTurner/AllisonsBakery.svg)](https://david-dm.org/IsaiahJTurner/AllisonsBakery) [![Code Climate](https://codeclimate.com/github/IsaiahJTurner/AllisonsBakery/badges/gpa.svg)](https://codeclimate.com/github/IsaiahJTurner/AllisonsBakery) [![GitHub version](https://badge.fury.io/gh/IsaiahJTurner%2FAllisonsBakery.svg)](https://badge.fury.io/gh/IsaiahJTurner%2FAllisonsBakery)
 
 ## Backend vs Frontend
 The guidelines for this project included mocking a "3rd party backend" but in an effort to keep the project within one repository (and to use GitHub Pages), the code had to be partially combined. Apart from the index.html file, all the frontend code is isolated to the frontend folder.
@@ -10,7 +10,7 @@ The guidelines for this project included mocking a "3rd party backend" but in an
 Since the content is static, a database was not used. Records can be added in the CSV file and edited in Excel or Numbers.
 
 ## Demo
-[isaiahjturner.github.io/AlisonsBakery](https://isaiahjturner.github.io/AlisonsBakery)
+[isaiahjturner.github.io/AllisonsBakery](https://isaiahjturner.github.io/AllisonsBakery)
 
 To see a demo of the site visit the link above. If a connection can not be established to the backend (you're looking at this repo months after I built it), you'll be prompted to set up your own. Click the button below to deploy to GitHub pages. Visit your heroku deployment to see the demo.
 
@@ -19,8 +19,8 @@ To see a demo of the site visit the link above. If a connection can not be estab
 
 ## Development
 ### Running
-1. `git clone AlisonsBakery`
-2. `cd AlisonsBakery`
+1. `git clone AllisonsBakery`
+2. `cd AllisonsBakery`
 3. `npm install`
 4. `npm start` or, even better, `nodemon` if you have it.
 
@@ -41,8 +41,8 @@ To see a demo of the site visit the link above. If a connection can not be estab
 - No rate limiting
 
 ## DMCA / Copyright
-All of the images displayed on this site are covered by their own individual copyrights. If you own the rights to any image displayed on this site simply email me at copyright.alisonsbakery@isaiahjturner.com to have it removed.
+All of the images displayed on this site are covered by their own individual copyrights. If you own the rights to any image displayed on this site simply email me at copyright.Allisonsbakery@isaiahjturner.com to have it removed.
 
 ## License
 Copyright (c) 2016 Isaiah Turner. All rights reserved.
-Alison's Bakery has not been released under any open source license. If you are interested in using any part of this application, please email me.
+Allison's Bakery has not been released under any open source license. If you are interested in using any part of this application, please email me.

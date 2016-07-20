@@ -1,5 +1,5 @@
 {
-  "name": "alisons-bakery-backend",
+  "name": "Allisons-bakery-backend",
   "version": "1.0.0",
   "description": "An open source bakery site you'll loaf to death.",
   "main": "app.js",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IsaiahJTurner/AlisonsBakery.git"
+    "url": "git+https://github.com/IsaiahJTurner/AllisonsBakery.git"
   },
   "author": "Isaiah Turner",
   "bugs": {
-    "url": "https://github.com/IsaiahJTurner/AlisonsBakery/issues"
+    "url": "https://github.com/IsaiahJTurner/AllisonsBakery/issues"
   },
-  "homepage": "https://github.com/IsaiahJTurner/AlisonsBakery#readme",
+  "homepage": "https://github.com/IsaiahJTurner/AllisonsBakery#readme",
   "dependencies": {
     "async": "^2.0.0",
     "csv-parse": "^1.1.3",
